@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import TaskList from './components/TaskList';
@@ -6,7 +6,7 @@ import AddTaskForm from './components/AddTaskForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-const App: React.FC = () => {
+function App() {
   const [activeKey, setActiveKey] = useState<string>('active');
 
   const [activeTasks, setActiveTasks] = useState<string[]>([]);

@@ -23,7 +23,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onTaskCompletion, completedT
 
   return (
     <div className="task-list">
-      {tasks.length === 0 && <p>No Active tasks.</p>}
+      {tasks.length === 0 && <p style={{textAlign: 'center'}}>No Active tasks.</p>}
       {tasks.map((task, index) => (
         <div key={index} className="mb-3 me-2">
           <Task
@@ -35,7 +35,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onTaskCompletion, completedT
           />
         </div>
       ))}
-      {completedTasks && completedTasks.length === 0 && <p>No Completed Tasks.</p>} {}
+      {completedTasks && completedTasks.length === 0 && <p style={{textAlign: 'center'}}>No Completed Tasks.</p>} {}
     </div>
   );
 };

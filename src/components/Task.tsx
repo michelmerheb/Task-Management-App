@@ -31,7 +31,7 @@ const Task: React.FC<TaskProps> = ({ task, index, onTaskCompletion, onDeleteTask
           className='me-2'
         />
         <span>{task}</span>
-        <button onClick={handleDeleteTask} className="btn btn-danger ms-4 btn-sm">Delete</button> {}
+        <button onClick={handleDeleteTask} className="btn btn-danger ms-4 btn-sm">Delete</button>
       </div>
     </div>
   );
